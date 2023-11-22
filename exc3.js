@@ -18,17 +18,14 @@ const book = {
 
 book.rating = 6;
 book.increaseRating = function (extraRating) {
-    this.rating += extraRating;
+    this.rating += Number(extraRating);
     if (this.rating >= 10) {
         this.rating = 10;
     }
-    //non essendo specificato cosa deve avvenire se il rating supera 10 ho optato per 
-    // fare si che semplicemente si fermi a 10 visto che la consegna dice "non può essere superiore".
 }
 delete book.year;
 const keys = Object.keys(book);
-for (i = 0; i < keys.length; i++) {
+for (let i = 0; i < keys.length; i++) {
     const key = keys[i];
     console.log(`${key}: ${book[key]}`);
 }
-

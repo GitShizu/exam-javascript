@@ -27,4 +27,3 @@ const power = (base, exponent) => {
         console.log('Operation complete');
     }
 }
-

@@ -8,15 +8,15 @@
 // stringa concatenata.
 
 
-const stringConnector = (strings)=>{
-    const filteredStrings = strings.filter((string)=> string[0].toLowerCase() === 'a') //Filtering for strings that begin with a or A
-    let compositeString = '';
+const connectStrings = (strings) => {
+    compositeString = '';
+    const filteredStrings = strings.filter((string) => string[0].toLowerCase() === 'a')
     filteredStrings.forEach(string => {
-       compositeString += string;
-       if(compositeString.length > 10 ){
-        compositeString = compositeString.substring(0,10)
-       }
+        compositeString += string;
+        if (compositeString.length > 10) {
+            compositeString = compositeString.substring(0, 10)
+        }
     });
     return compositeString
 }
-
+console.log(connectStrings(['Aug', 'bro', 'var', 'asterelle']));

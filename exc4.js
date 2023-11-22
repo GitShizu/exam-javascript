@@ -23,7 +23,7 @@ window.addEventListener('load', () => {
             const li = document.createElement('li');
             li.innerText = input.value;
             ul.appendChild(li);
-            //avrei aggiunto anche un input.value = '' (a questa riga) per svuotare l'input ad ogni click    
+            //avrei aggiunto un input.value = ''; (a questa riga) per svuotare l'input ad ogni click    
         }
     })
 })
