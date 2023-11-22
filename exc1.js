@@ -11,7 +11,7 @@
 
 const userName = prompt('Type your name here');
 const userBirthYear = Number(prompt('Type your year of birth here'));
-const greeting = (userBirthYear % 4 === 0 && !userBirthYear % 100 === 0) || userBirthYear % 400 === 0
+const greeting = (userBirthYear % 4 === 0 && userBirthYear % 100 !== 0) || userBirthYear % 400 === 0
     ? 'sei nato/a in un anno bisestile'
     : 'non sei nato/a in un anno bisestile';
 const greetUser = alert(`Ciao ${userName}, ${greeting}`)
