@@ -20,6 +20,3 @@ const stringConnector = (strings)=>{
     return compositeString
 }
 
-
-const testArray = ['agn', 'babbuino', 'Kapybara', 'Anac']
-console.log(stringConnector(testArray));
